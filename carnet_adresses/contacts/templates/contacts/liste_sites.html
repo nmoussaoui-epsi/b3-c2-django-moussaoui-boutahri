@@ -1,0 +1,12 @@
+{% for site in sites %}
+<h2>{{ site.nom }}</h2>
+<p>URL: {{ site.url }}</p>
+<p>Identifiant: {{ site.identifiant }}</p>
+<p>Mot de passe: {{ site.mot_de_passe }}</p>
+<a href="{% url 'modifier_site' site.id %}">Modifier</a>
+<a href="{% url 'supprimer_site' site.id %}">Supprimer</a>
+{% empty %}
+<p>Aucun site trouvé.</p>
+{% endfor %}
+
+<a href="{% url 'ajouter_site' %}">Ajouter un site</a>
