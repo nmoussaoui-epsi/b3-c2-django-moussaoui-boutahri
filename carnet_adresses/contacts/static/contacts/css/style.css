@@ -175,6 +175,37 @@ button[type="submit"] {
 button[type="submit"]:hover {
   background-color: #0056b3;
 }
+.custom-table-container th,
+.custom-table-container td {
+  border-radius: 10px;
+}
+
+.custom-table-container {
+  background-color: #373b3f;
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.custom-table-container th {
+  background-color: #373b3f;
+  color: #fff;
+  border-color: black;
+}
+
+.custom-table-container td {
+  background-color: #373b3f;
+  color: #fff;
+  border-color: rgb(45, 45, 45);
+}
+
+.custom-table-container a {
+  color: #fff;
+}
+
+.custom-table-container a:hover {
+  color: #f2f2f2;
+}
 .footer span {
   color: rgb(114, 114, 114);
 }
