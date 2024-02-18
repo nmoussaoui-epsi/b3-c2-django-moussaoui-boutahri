@@ -37,6 +37,7 @@
           <form method="post">
             {% csrf_token %} {{ form.as_p }}
             <button type="submit" class="btn btn-primary">Ajouter</button>
+            <a href="/liste" class="btn btn-success mt-4">Consultez mes sites</a>
           </form>
         </div>
       </div>
