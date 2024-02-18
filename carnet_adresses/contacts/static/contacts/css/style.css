@@ -123,6 +123,58 @@ body {
   background-color: #373b3f;
 }
 
+.card {
+  max-width: 500px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #373b3f;
+}
+
+.card-body {
+  text-align: center;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  float: left;
+  clear: both;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="url"] {
+  display: block;
+  width: calc(100% - 120px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  height: 30px;
+  float: right;
+  color: black;
+}
+
+button[type="submit"] {
+  display: block;
+  clear: both;
+  padding: 10px;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
 .footer span {
   color: rgb(114, 114, 114);
 }
