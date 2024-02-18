@@ -31,3 +31,16 @@ def supprimer_site(request, site_id):
     site = Site.objects.get(id=site_id)
     site.delete()
     return redirect('liste_sites')
+
+def index(request):
+    return render(request, 'contacts/index.html')
+
+def connexion(request):
+    return render(request, 'contacts/connexion.html')
+
+def inscription(request):
+    return render(request, 'contacts/inscription.html')
+
+
+def contact(request):
+    return render(request, 'contacts/contact.html')

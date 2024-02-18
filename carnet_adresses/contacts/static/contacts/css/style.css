@@ -1,0 +1,128 @@
+* {
+  color: white;
+}
+body {
+  background: radial-gradient(
+      50% 50% at 100% 0,
+      #212529 0% 5%,
+      #373b3f 6% 15%,
+      #212529 16% 25%,
+      #373b3f 26% 35%,
+      #212529 36% 45%,
+      #373b3f 46% 55%,
+      #212529 56% 65%,
+      #373b3f 66% 75%,
+      #212529 76% 85%,
+      #373b3f 86% 95%,
+      #0000 96%
+    ),
+    radial-gradient(
+      50% 50% at 0 100%,
+      #212529 0% 5%,
+      #373b3f 6% 15%,
+      #212529 16% 25%,
+      #373b3f 26% 35%,
+      #212529 36% 45%,
+      #373b3f 46% 55%,
+      #212529 56% 65%,
+      #373b3f 66% 75%,
+      #212529 76% 85%,
+      #373b3f 86% 95%,
+      #0000 96%
+    ),
+    radial-gradient(
+      50% 50%,
+      #212529 0% 5%,
+      #373b3f 6% 15%,
+      #212529 16% 25%,
+      #373b3f 26% 35%,
+      #212529 36% 45%,
+      #373b3f 46% 55%,
+      #212529 56% 65%,
+      #373b3f 66% 75%,
+      #212529 76% 85%,
+      #373b3f 86% 95%,
+      #0000 96%
+    ),
+    radial-gradient(
+        50% 50%,
+        #212529 0% 5%,
+        #373b3f 6% 15%,
+        #212529 16% 25%,
+        #373b3f 26% 35%,
+        #212529 36% 45%,
+        #373b3f 46% 55%,
+        #212529 56% 65%,
+        #373b3f 66% 75%,
+        #212529 76% 85%,
+        #373b3f 86% 95%,
+        #0000 96%
+      )
+      32px 32px;
+  background-size: 64px 64px;
+  background-color: #212529;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  min-height: 60vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar a {
+  position: relative;
+  color: white;
+}
+
+.navbar a:not(.button-link, .navbar-brand)::after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar a:not(.button-link, .navbar-brand):hover::after {
+  transform: scaleX(1);
+}
+.navbar a.nav-link,
+.navbar-brand:hover {
+  color: white;
+}
+
+.navbar .button-link {
+  background-color: #0b5ed7;
+  border-radius: 5px;
+}
+
+.navbar .button-link:hover {
+  background-color: #1e6fe8;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.login-card {
+  max-width: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #373b3f;
+}
+
+.footer span {
+  color: rgb(114, 114, 114);
+}
